@@ -1,0 +1,93 @@
+.header{
+    margin-top: 50px;
+    height: 95px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    .pages{
+        color:#232323;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: right;
+        margin-top:-30px;
+    }
+
+    .first{
+        border: 1.8px solid #232323;
+        margin-top:-40px;
+
+    }
+}
+
+form{
+    margin-left: 100px;
+  label{
+   
+    font-family: arial;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.55px;
+    color:#232323;
+   
+  }
+
+    input{
+        width: 500px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.73px;
+        font-family: arial;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+
+    }
+    .errname{
+        color:#F15524;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19.31px;
+        display: inline-block;
+        margin-top: -5px;
+
+    }
+    .hide{
+        display: none;
+    }
+}
+
+
+.asideimg{
+
+    margin-top: -400px;
+    margin-left: 750px;
+    width: 600px;
+    height: 600px;
+}
+.topdiv{
+    width: 600px;
+    height: 75px;
+    background: #D6D16E;
+    margin-top: -400px;
+    margin-left: 750px;
+}
+.second{
+    border: 0.8px solid #000000;
+    width: 237px;
+    margin-left: 100px;
+    margin-top: 250px;
+}
+
+.note{
+    margin-left: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.31px;
+    color: #626262;
+}
+.vector{
+    margin-left: 50%;
+    cursor: pointer;
+}

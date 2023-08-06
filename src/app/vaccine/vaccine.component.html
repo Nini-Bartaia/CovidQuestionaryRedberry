@@ -1,0 +1,64 @@
+<div class="header">
+    <img src="assets/Frame.png" alt="" >
+    <p class="pages">3/4</p>
+    <hr class="first">
+</div>
+
+<img src="assets/doctor2.png" alt="" class="image">
+<img src="assets/main logo copy.png" alt="" class="image2">
+
+<form action="" [formGroup]="vaccineForm">
+<div class="wrapper" >
+<p class="question">უკვე აცრილი ხარ?*</p>
+ <input type="radio" name="vacinnated" id="radiobtn" (change)="vaccine($event)" formControlName="vacinnated">
+<label for="radiobtn">კი</label>
+<br>
+<input type="radio" name="vacinnated" id="radiobtnbtn" (change)="vaccine($event)"  >
+<label for="radiobtnbtn">არა</label>
+
+</div>
+
+<div class="wrapper2" *ngIf="show">
+
+    <p class="question">აირჩიე რა ეტაპზე ხარ*</p>
+    <input type="radio" name="step" id="radiobtn3" (change)="check($event)" formControlName="step">
+    <label for="radiobtn3">პირველი დოზა და დარეგისტრირებული ვარ მეორეზე</label>
+    <br>
+    <input type="radio" name="step" id="radiobtnBtn" (change)="check($event)" >
+    <label for="radiobtnBtn">სრულად აცრილი ვარ</label>
+    <br>
+    <input type="radio" name="step" id="radiobtn11" (change)="check($event)"  >
+    <label for="radiobtn11">პირველი დოზა და არ დავრეგისტრირებულვარ მეორეზე</label>
+    
+    </div>
+
+
+    <div class="wrapper3" *ngIf="show2">
+
+        <p class="question">რას ელოდები?*</p>
+        <input type="radio" name="wait" id="radiobtn3"  (change)="check2($event)" formControlName="wait">
+        <label for="radiobtn3">დარეგისტრირებული ვარ და ველოდები რიცხვს</label>
+        <br>
+        <input type="radio" name="wait" id="radioBtn"  (change)="check2($event)" >
+        <label for="radioBtn">არ ვგეგმავ</label>
+        <br>
+        <input type="radio" name="wait" id="radio"  (change)="check2($event)" >
+        <label for="radio">გადატანილი მაქვს და ვგეგმავ აცრას</label>
+        </div>
+
+
+        <div class="wrapper4" *ngIf="recommend">
+            <p>
+                რომ არ გადადო,<br> ბარემ ახლავე დარეგისტრირდი <br> <a href="https://booking.moh.gov.ge/">https://booking.moh.gov.ge/</a>
+            </p>
+        </div>
+
+</form>
+
+
+<div class="vectors">
+
+    <img src="assets/Vector 7.png" alt="" class="left" routerLink="/covid">
+    <img src="assets/Vector 2.png" alt="" class="right" (click)="navigate()" >
+</div>
+  

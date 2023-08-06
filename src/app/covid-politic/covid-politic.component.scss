@@ -1,0 +1,167 @@
+.header{
+    margin-top: 50px;
+    height: 95px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    .pages{
+        color:#232323;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: right;
+        margin-top:-30px;
+    }
+
+    .first{
+        border: 1.8px solid #232323;
+        margin-top:-40px;
+
+    }
+}
+
+.image{
+    width: 550px;
+    height: 550px;
+    margin-left: 710px;
+    margin-top: -40px;
+
+}
+
+.info{
+    margin-left: 100px;
+    margin-top:-530px;
+    color:#232323;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+       
+}
+
+
+.wrapper{
+    margin-left: 100px;
+    margin-top: 50px;
+
+    .question{
+        color:#232323;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26.55px;
+        margin-top: -20px;
+    }
+
+    label{
+        color:#232323;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24.14px;
+        
+
+    }
+    input{
+        margin-top: 10px;
+    }
+
+}
+
+.wrapper2{
+    margin-left: 100px;
+    margin-top: 50px;
+
+  
+
+label{
+    color:#232323;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.14px;
+    
+
+}
+input{
+    margin-top: 10px;
+}
+p{
+    color:#232323;
+    font-weight: 700;
+    font-size: 22px;
+     line-height: 26.55px;
+    
+
+}
+    
+}
+
+
+.wrapper3{
+    margin-left: 100px;
+    
+
+    textarea{
+        width:622px;
+        height: 184px;
+        resize: none;
+
+         
+        
+    }
+    p{
+        color:#232323;
+        font-weight: 700;
+        font-size: 22px;
+         line-height: 26.55px;
+        
+    
+    }
+
+}
+
+.wrapper4{
+    margin-left: 100px;
+    
+
+    textarea{
+        width:622px;
+        height: 184px;
+        resize: none;
+
+         
+        
+    }
+    p{
+        color:#232323;
+        font-weight: 700;
+        font-size: 22px;
+         line-height: 26.55px;
+        
+    
+    }
+
+}
+
+button{
+    width: 180px;
+    height: 56px;
+    padding: 17px, 29px, 17px, 29px;
+    gap: 10px;
+    border-radius: 42px;
+    background: #208298;
+    color:white;
+    margin-left: 560px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.6px;
+    margin-top: 50px;
+    cursor: pointer;
+    border: none;
+}
+
+.left{
+     
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 900px;
+    margin-bottom: 50px;
+     
+}

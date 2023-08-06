@@ -1,0 +1,74 @@
+<div class="header">
+    <img src="assets/Frame.png" alt="" >
+    <p class="pages">4/4</p>
+    <hr class="first">
+</div>
+
+
+<img src="assets/bike2 1.png" alt="" class="image">
+
+<p class="info">რედბერის მთავარი ღირებულება ჩვენი გუნდის <br> თითოეული წევრია. გარემო, რომელსაც ჩვენი<br> თანამშრომლები ქმნით, ბევრისთვის არის და ყოფილა<br> წლების განმავლობაში მიზნებისთვის ერთად ბრძოლის<br> მიზეზი, ბევრისთვის კი — ჩვენთან გადმოსვლის.<br><br> პანდემიის პერიოდში ერთმანეთსაც იშვიათად<br> ვნახულობთ პირისპირ და ყოველდღიური კომუნიკაციაც<br> გაიშვიათდა.</p>
+
+<form action="" [formGroup]="politicForm">
+    <div class="wrapper" >
+        <p class="question">რა სიხშირით შეიძლება გვქონდეს საერთო<br> არაფორმალური ონლაინ შეხვედრები, სადაც ყველა<br> სურვილისამებრ ჩაერთვება?*</p>
+        <input type="radio" name="informal" id="radiobtn" formControlName="informal" value="კვირაში ორჯერ">
+        <label for="radiobtn">კვირაში ორჯერ</label>
+        <br>
+        <input type="radio" name="informal" id="radiobtnbtn" formControlName="informal" value="კვირაში ერთხელ">
+        <label for="radiobtnbtn">კვირაში ერთხელ</label>
+        <br>
+        <input type="radio" name="informal" id="radio" formControlName="informal" value="ორ კვირაში ერთხელ">
+        <label for="radio">ორ კვირაში ერთხელ</label>
+        <br>
+        <input type="radio" name="informal" id="rad" formControlName="informal" value="თვეში ერთხელ">
+        <label for="rad">თვეში ერთხელ</label>
+        
+        </div>
+
+
+        <div class="wrapper2" >
+            <p class="question">კვირაში რამდენი დღე ისურვებდი ოფისიდან<br> მუშაობას?*</p>
+             <input type="radio" name="workday" id="work" formControlName="workday" value="0"  >
+            <label for="work">0</label>
+            <br>
+            <input type="radio" name="workday" id="work1" formControlName="workday"  value="1"  >
+            <label for="work1">1</label>
+            <br>
+            <input type="radio" name="workday" id="work2" formControlName="workday" value="2"  >
+            <label for="work2">2</label>
+            <br>
+            <input type="radio" name="workday" id="work3" formControlName="workday" value="3" >
+            <label for="work3">3</label>
+            <br>
+            <input type="radio" name="workday" id="work4" formControlName="workday" value="4" >
+            <label for="work4">4</label>
+            <br>
+            <input type="radio" name="workday" id="work5" formControlName="workday"  value="5" >
+            <label for="work5">5</label>
+            <br>
+           
+            
+            </div>
+
+
+            <div class="wrapper3">
+            <p>რას ფიქრობ ფიზიკურ შეკრებებზე?</p>
+                <br>
+            <textarea rows="5" cols="33" formControlName="gathering"></textarea>
+            </div>
+
+            <div class="wrapper4">
+                <p>რას ფიქრობ არსებულ გარემოზე:<br> რა მოგწონს, რას დაამატებდი, რას შეცვლიდი?</p>
+                    <br>
+                <textarea rows="5" cols="33" formControlName="environment"></textarea>
+                </div>
+
+        
+        
+        
+</form>
+
+<button type="submit" (click)="navigate()">დასრულება</button>
+<br>
+<img src="assets/Vector 7.png" alt="" class="left" routerLink="/vaccine">

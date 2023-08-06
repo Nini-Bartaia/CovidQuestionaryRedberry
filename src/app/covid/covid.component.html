@@ -1,0 +1,56 @@
+
+<div class="header">
+    <img src="assets/Frame.png" alt="" >
+    <p class="pages">2/4</p>
+    <hr class="first">
+</div>
+
+<img src="assets/vaccinate2.png" alt="" class="image">
+<img src="assets/mainlogo2.png" alt="" class="image2">
+
+<form action="" [formGroup]="covidForm">
+<div class="wrapper" >
+<p class="question">გაქვს გადატანილი Covid-19?*</p>
+<input type="radio" name="hadCovid" id="radiobtn" (change)="option($event)" formControlName="hadCovid">
+<label for="radiobtn">კი</label>
+<br>
+<input type="radio" name="hadCovid" id="radiobtn1" (change)="option($event)" >
+<label for="radiobtn1" >არა</label>
+<br>
+<input type="radio" name="hadCovid" id="radiobtn2" (change)="option($event)" >
+<label for="radiobtn2">ახლა მაქვს</label>
+</div>
+
+<div class="wrapper2" *ngIf="show">
+
+<p class="question">ანტისხეულების ტესტი გაქვს გაკეთებული?*</p>
+<input type="radio" name="antibodies" id="radiobtn3" (change)="secondoption($event)"  formControlName="antibodies">
+<label for="radiobtn3">კი</label>
+<br>
+<input type="radio" name="antibodies" id="radiobtn4" (change)="secondoption($event)">
+<label for="radiobtn4">არა</label>
+
+</div>
+
+<div class="wrapper3" *ngIf="showDate">
+<p class="question">მიუთითე მიახლოებითი პერიოდი (დღე/თვე/წელი)<br> როდის გქონდა Covid-19*</p>
+<input type="date" name="" id="" class="date" formControlName="covidDate">
+
+</div>
+
+<div class="wrapper4" *ngIf="showanother" >
+    <p class="question">თუ გახსოვს, გთხოვ მიუთითე ტესტის მიახლოებითი<br> რიცხვი და ანტისხეულების რაოდენობა*</p>
+    <input type="number" name="" id="" placeholder="რიცხვი" formControlName="testDate">
+    <br>
+    <input type="number" name="" id="" placeholder="ანტისხეულების რაოდენობა" formControlName="number">
+
+    
+</div>
+</form>
+
+<div class="vectors">
+
+<img src="assets/Vector 7.png" alt="" class="left" routerLink="/personal">
+<img src="assets/Vector 2.png" alt="" class="right" (click)="navigation()">
+</div>
+

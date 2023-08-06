@@ -1,0 +1,57 @@
+<div class="header">
+<img src="assets/Frame.png" alt="" >
+<p class="pages">1/4</p>
+<hr class="first">
+</div>
+
+
+<form action="" [formGroup]="personalForm">
+
+    <label for="name">სახელი*</label>
+    <br>
+    <input type="text" id="name" formControlName="name" (change)="validation($event)">
+    <br>
+    <ng-container *ngIf="personalForm.get('name')?.invalid && personalForm.get('name')?.dirty&&!personalForm.get('name')?.untouched&&!invalid">
+    <p class="errname">სახელის ველი უნდა შედგებოდეს მინიმუმ 3 სიმბოლოსგან</p>
+    </ng-container>
+    <ng-container *ngIf="personalForm.get('name')?.touched&& personalForm.get('name')?.invalid&& !personalForm.get('name')?.dirty">
+        <p class="errname">სახელის ველი უნდა შედგებოდეს მაქსიმუმ 255 სიმბოლოსგან</p>
+    </ng-container>
+    <ng-container *ngIf="invalid&& personalForm.get('name')?.touched">
+            <p class="errname">სახელის ველი უნდა შეიცავდეს მხოლოდ ანბანის ასოებს</p>
+    </ng-container>
+    <br>
+    <label for="surname">გვარი*</label>
+    <br>
+    <input type="text" id="surname" formControlName="surname" (change)="validation($event)">
+    <br>
+    <ng-container *ngIf="personalForm.get('surname')?.invalid && personalForm.get('surname')?.dirty&&!personalForm.get('surname')?.untouched&&!invalid">
+        <p class="errname">გვარის ველი უნდა შედგებოდეს მინიმუმ 3 სიმბოლოსგან</p>
+    </ng-container>
+    <ng-container *ngIf="personalForm.get('surname')?.touched&& personalForm.get('surname')?.invalid&& !personalForm.get('surname')?.dirty">
+            <p class="errname">გვარის ველი უნდა შედგებოდეს მაქსიმუმ 255 სიმბოლოსგან</p>
+    </ng-container>
+    <ng-container *ngIf="invalid">
+                <p class="errname">გვარის ველი უნდა შეიცავდეს მხოლოდ ანბანის ასოებს</p>
+    </ng-container>
+    <br>
+    <label for="mail">მეილი*</label>
+    <br>
+    <input type="email" id="mail" formControlName="email" (change)="mailValidation()">
+    <br>
+    <ng-container *ngIf="personalForm.get('email')?.invalid&& personalForm.get('email')?.touched&& !emailInvalid" >
+        <p class="errname" >თქვენ მიერ შეყვანილი მეილი არასწორია</p>
+    </ng-container>
+    <ng-container *ngIf="emailInvalid">
+        <p class="errname" >გთხოვთ დარეგისტრირდეთ Redberry-ს მეილით (youremail@redberry.ge)</p>
+    </ng-container>
+    
+    
+</form>
+
+<img src="assets/scan2.png" alt="" class="asideimg">
+<div class="topdiv"></div>
+<hr class="second">
+<p class="note">*-ით მონიშნული ველების შევსება <br> სავალდებულოა</p>
+
+<img src="assets/Vector 2.png" alt="" class="vector" (click)="navigation()">

@@ -1,0 +1,161 @@
+.header{
+    margin-top: 50px;
+    height: 95px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    .pages{
+        color:#232323;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: right;
+        margin-top:-30px;
+    }
+
+    .first{
+        border: 1.8px solid #232323;
+        margin-top:-40px;
+
+    }
+}
+
+.wrapper{
+    margin-left: 100px;
+    margin-top:-530px;
+
+    .question{
+        color:#232323;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26.55px;
+        margin-top: -15px;
+    }
+
+    label{
+        color:#232323;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24.14px;
+        
+
+    }
+    input{
+        margin-top: 10px;
+    }
+
+}
+
+.image{
+    width: 550px;
+    height: 550px;
+    margin-left: 610px;
+    margin-top: -40px;
+
+}
+
+.image2{
+    
+    margin-left: 70%;
+    position: absolute;
+    top: 35%;
+    right: 45%;
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+
+}
+
+
+
+.wrapper2{
+    margin-left: 100px;
+    margin-top: 50px;
+
+   p{
+    color:#232323;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.55px;
+    margin-top: -15px;
+}
+
+label{
+    color:#232323;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.14px;
+    
+
+}
+input{
+    margin-top: 10px;
+}
+    
+}
+
+.placeholder{
+
+}
+
+.wrapper3{
+    margin-left: 100px;
+    margin-top: 50px;
+    .date{
+        width: 500px;
+        height: 50px;
+    
+    }
+
+    p{color:#232323;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.55px;
+    margin-top: -15px;
+    }
+    input{
+        margin-top: 10px;
+    }
+}
+
+.wrapper4{
+    margin-left: 100px;
+    margin-top: 50px;
+
+   p{
+    color:#232323;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.55px;
+    margin-top: -15px;
+}
+
+
+input{
+    margin-top: 10px;
+    width: 500px;
+    height: 50px;
+}
+
+}
+
+
+.vectors{
+    position: absolute;
+    left: 45%;
+    top: 90%;
+
+    .left{
+
+        cursor: pointer;
+         
+    
+    }
+    
+    .right{
+        margin-left: 80px;
+        cursor: pointer;
+    }
+}
+
+

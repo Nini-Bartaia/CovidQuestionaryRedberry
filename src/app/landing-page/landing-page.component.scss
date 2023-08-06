@@ -1,0 +1,22 @@
+img{
+    
+    width: 100px;
+    height: 100px;
+}
+
+@font-face {
+    font-family: 'arial';
+    src: url(/covid-app/src/assets/bpg_arial_2009.ttf) format("opentype");
+}
+p{
+    font-family: arial;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    cursor: pointer;
+   
+}
+
+
+
