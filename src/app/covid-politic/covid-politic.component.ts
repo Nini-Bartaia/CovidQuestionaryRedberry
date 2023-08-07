@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MyserviceService } from '../myservice.service';
 
 @Component({
   selector: 'app-covid-politic',
@@ -9,31 +10,14 @@ import { Router } from '@angular/router';
 })
 export class CovidPoliticComponent {
 
-  constructor(private router:Router){}
-
-  politicForm= new FormGroup({
-    informal: new FormControl('', Validators.required),
-    workday: new FormControl('', Validators.required),
-    gathering: new FormControl(''),
-    environment: new FormControl('')
-  })
-
+  constructor(private router:Router, private myservice:MyserviceService){}
 
  
-  
-
+  politicForm= this.myservice.politicForm
 
   navigate(){
 
-    console.log(this.politicForm.controls.informal.value)
-    console.log(this.politicForm.controls.informal.valid)
-    console.log(this.politicForm.controls.workday.value)
-    console.log(this.politicForm.controls.workday.valid)
-    console.log(this.politicForm.controls.environment.value)
-    console.log(this.politicForm.controls.environment.valid)
-    console.log(this.politicForm.controls.gathering.value)
-    console.log(this.politicForm.controls.gathering.valid)
-
+    
     if(this.politicForm.valid){
 
       this.router.navigate(["/thanku"])

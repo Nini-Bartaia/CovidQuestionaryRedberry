@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MyserviceService } from '../myservice.service';
 
 @Component({
   selector: 'app-vaccine',
@@ -10,20 +11,15 @@ import { Router } from '@angular/router';
 export class VaccineComponent {
 
 
-  constructor(private router:Router){}
+  constructor(private router:Router, private myservice:MyserviceService){}
   show:boolean=false;
   show2:boolean=false;
   next:boolean=false;
   recommend:boolean=false;
   next2:boolean=false;
 
-  vaccineForm=new FormGroup({
-
-    vacinnated: new FormControl('',Validators.required),
-    step: new FormControl('',Validators.required),
-    wait: new FormControl('',Validators.required)
-
-  })
+  
+    vaccineForm= this.myservice.vaccineForm
   vaccine(event:Event){
 
     const element= event.target as HTMLInputElement

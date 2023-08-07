@@ -10,6 +10,7 @@ import { CovidComponent } from './covid/covid.component';
 import { VaccineComponent } from './vaccine/vaccine.component';
 import { CovidPoliticComponent } from './covid-politic/covid-politic.component';
 import { ThankupageComponent } from './thankupage/thankupage.component';
+import { HttpClient, HttpHeaders,HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { ThankupageComponent } from './thankupage/thankupage.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

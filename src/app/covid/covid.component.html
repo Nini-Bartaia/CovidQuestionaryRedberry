@@ -11,23 +11,23 @@
 <form action="" [formGroup]="covidForm">
 <div class="wrapper" >
 <p class="question">გაქვს გადატანილი Covid-19?*</p>
-<input type="radio" name="hadCovid" id="radiobtn" (change)="option($event)" formControlName="hadCovid">
+<input type="radio" name="hadCovid" id="radiobtn" value="კი" (change)="option($event)" formControlName="hadCovid">
 <label for="radiobtn">კი</label>
 <br>
-<input type="radio" name="hadCovid" id="radiobtn1" (change)="option($event)" >
+<input type="radio" name="hadCovid" id="radiobtn1" value="არა"  (change)="option($event)" formControlName="hadCovid" >
 <label for="radiobtn1" >არა</label>
 <br>
-<input type="radio" name="hadCovid" id="radiobtn2" (change)="option($event)" >
+<input type="radio" name="hadCovid" id="radiobtn2" value="ახლა მაქვს" (change)="option($event)" formControlName="hadCovid">
 <label for="radiobtn2">ახლა მაქვს</label>
 </div>
 
 <div class="wrapper2" *ngIf="show">
 
 <p class="question">ანტისხეულების ტესტი გაქვს გაკეთებული?*</p>
-<input type="radio" name="antibodies" id="radiobtn3" (change)="secondoption($event)"  formControlName="antibodies">
+<input type="radio" name="antibodies" id="radiobtn3" value="კი" (change)="secondoption($event)"  formControlName="antibodies">
 <label for="radiobtn3">კი</label>
 <br>
-<input type="radio" name="antibodies" id="radiobtn4" (change)="secondoption($event)">
+<input type="radio" name="antibodies" id="radiobtn4" value="არა" (change)="secondoption($event)" formControlName="antibodies">
 <label for="radiobtn4">არა</label>
 
 </div>

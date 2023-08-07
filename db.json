@@ -1,0 +1,54 @@
+{
+  "users": [
+    [
+      {
+        "name": "nini",
+        "surname": "bartaia",
+        "email": "nini@redberry.ge"
+      },
+      {
+        "hadCovid": "",
+        "antibodies": "",
+        "testDate": "",
+        "number": "",
+        "covidDate": ""
+      },
+      {
+        "vacinnated": "",
+        "step": "",
+        "wait": ""
+      },
+      {
+        "informal": "ორ კვირაში ერთხელ",
+        "workday": "4",
+        "gathering": "skgkdgsadgd",
+        "environment": "ramemmemeem"
+      }
+    ],
+    [
+      {
+        "name": "lizi",
+        "surname": "bartaia",
+        "email": "lizi@redberry.ge"
+      },
+      {
+        "hadCovid": "კი",
+        "antibodies": "კი",
+        "testDate": 23,
+        "number": 12,
+        "covidDate": ""
+      },
+      {
+        "vacinnated": "კი",
+        "step": "პირველი დოზა და დარეგისტრირებული ვარ მეორეზე",
+        "wait": ""
+      },
+      {
+        "informal": "ორ კვირაში ერთხელ",
+        "workday": "3",
+        "gathering": "gdsgfhgdfksgfsdjhfshd",
+        "environment": "!1!!dfhdbfjs"
+      }
+    ]
+  ]
+}

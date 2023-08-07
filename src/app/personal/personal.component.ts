@@ -2,6 +2,7 @@ import { Type } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MyserviceService } from '../myservice.service';
 
 @Component({
   selector: 'app-personal',
@@ -10,20 +11,14 @@ import { Router } from '@angular/router';
 })
 export class PersonalComponent {
 
-  constructor(private router:Router){
+  constructor(private router:Router, private myservice:MyserviceService){
 
   }
 
   invalid:boolean=false;
   emailInvalid:boolean=false;
-  personalForm= new FormGroup({
-    name: new FormControl('',[ Validators.required,Validators.minLength(2)]),
-    surname: new FormControl('',[ Validators.required,Validators.minLength(2)]),
-    email: new FormControl('',[Validators.required, Validators.email, Validators.pattern(/^[^@]+@(redberry)\.ge$/i)])
-    
-
-  })
-
+   
+  personalForm= this.myservice.personalForm
   validation(event:any){
 
     const element= event.target as HTMLInputElement
